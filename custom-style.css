@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.uni-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: dimgrey;
+    padding:5px;
+}
+.heading-bar{
+    background-color:cadetblue;
+    height:5px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+.para{
+    color: dimgray;
+    text-align:left;
+    
+    padding: 20px;
+}
+/*//////////////////////////////////////////////////////
+
+               landing page styling
+
+//////////////////////////////////////////////////////*/
+.header{
+    height:95vh;
+    background-attachment: fixed;
+    background-position:top;
+    background-size: cover;
+    background-color:white; 
+}
+.heading-right-primary{
+    color: grey;
+    padding:5px;
+    margin-top:20%;
+    text-align: justify;
+}
+.bg-head-left-img{
+    height:95vh;
+    background-size: cover;
+    background-image: url("images/bg-header-left.png");
+    
+}
+.message-img-res{
+    height: 200px;
+    width: 300px;
+    margin-left:20%;
+}
+@media only screen and (max-width: 486px){
+    .bg-head-left-img{
+        height: 50vh;
+    }
+    .heading-right-primary>h1{
+        font-size: 2rem;
+    }
+    .message-img-res{
+        margin-left:auto;
+    }
+}
+.img-bouncing{
+    position: absolute;
+    width:80%;
+    height:auto;
+    animation: animate-header 2s linear infinite;
+    
+}
+
+@keyframes animate-header{
+    0%{
+        top:5%;
+    }
+    50%{
+        top:1%;
+    }
+    100%{
+        top:5%
+    }
+}
+
+/*//////////////////////////////////////////////////////
+
+               what we need to learn
+
+//////////////////////////////////////////////////////*/
+
+.res-img-course{
+    width: 80%;
+    height: auto;
+    margin-left:10%;
+}
+
+/*//////////////////////////////////////////////////////
+
+               what we need to learn
+
+//////////////////////////////////////////////////////*/
+.get-in-touch{
+     widows: 90%;
+    margin:35px;
+}
+.footer-bg{
+    height:45vh;
+    background-color:#a455e0;
+    margin-top: 1rem;
+    color: white;
+    padding: 20px;
+}
+.social-icon{
+    list-style-type:none;
+}
+.social-icon>li{
+    float:left;
+    padding: 10px;
+    font-size:25px;
+}
+.social-icon>li>a{
+    cursor: pointer;
+    color: white;
+}
+.social-icon>li>a:hover{
+    color: aqua;
+}
+.footer-bg.no-gutters{
+    margin: 0;
+}
